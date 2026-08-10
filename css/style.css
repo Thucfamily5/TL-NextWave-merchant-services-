@@ -921,6 +921,42 @@ footer {
     letter-spacing: 2px;
 }
 
+/* ===== Photo Showcase ===== */
+.photo-showcase {
+    padding: 0 20px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.photo-showcase-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.photo-showcase-inner img {
+    width: 100%;
+    display: block;
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(11,19,43,0.85), transparent);
+    color: var(--white);
+    padding: 30px 24px 16px;
+    font-size: 0.9rem;
+}
+
+.photo-caption strong {
+    color: var(--accent-color);
+}
+
 /* ===== Google Map ===== */
 .map-wrap {
     border-radius: 14px;
