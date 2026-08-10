@@ -1,4 +1,4 @@
-/* ===========================
+ /* ===========================
    TL NextWave Merchant Services
    Shared Stylesheet
 =========================== */
@@ -939,7 +939,16 @@ footer {
 
 .photo-showcase-inner img {
     width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    object-position: center 25%;
     display: block;
+}
+
+@media (max-width: 768px) {
+    .photo-showcase-inner img {
+        max-height: 280px;
+    }
 }
 
 .photo-caption {
@@ -1067,4 +1076,4 @@ input:focus-visible,
 textarea:focus-visible {
     outline: 3px solid var(--accent-color);
     outline-offset: 2px;
-}
+} 
