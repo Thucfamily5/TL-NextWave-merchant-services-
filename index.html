@@ -1,280 +1,1079 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TL NextWave Merchant Services | POS Systems for Restaurants & Nail Salons</title>
-    <meta name="description" content="Modern POS systems and payment processing built for restaurants and nail salons. Fast setup, low fees, reliable support in Portland, OR.">
-    <link rel="canonical" href="https://www.tlnextwave.com/index.html">
-    <meta property="og:title" content="TL NextWave Merchant Services | POS Systems for Restaurants & Nail Salons">
-    <meta property="og:description" content="Modern POS systems and payment processing built for restaurants and nail salons. Fast setup, low fees, reliable support in Portland, OR.">
-    <meta property="og:type" content="website">
-    <link rel="icon" href="icons/pos-terminal.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+/* ===========================
+   TL NextWave Merchant Services
+   Shared Stylesheet
+=========================== */
 
-    <nav>
-        <a href="index.html" class="nav-logo">
-            <img src="images/logo.jpg" alt="TL NextWave Merchant Services logo" width="42" height="42">
-            <div class="nav-logo-text">TL NEXTWAVE<span>MERCHANT SERVICES</span></div>
-        </a>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="has-dropdown">
-    <a href="services.html" class="dropdown-toggle">Services <span class="caret">&#9662;</span></a>
-    <ul class="dropdown-menu">
-        <li><a href="services.html">All Services</a></li>
-<li><a href="restaurant-pos.html">Restaurant POS</a></li>
-<li><a href="nail-salon-pos.html">Nail Salon POS</a></li>
-<li><a href="retail-pos.html">Retail POS</a></li>
-<li><a href="online-ordering.html">Online Ordering</a></li>
-<li><a href="loyalty.html">Loyalty Program</a></li>
-<li><a href="cash-discount.html">Cash Discount</a></li>
-    </ul>
-</li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html" class="nav-btn">Request Demo</a></li>
-        </ul>
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
-    </nav>
+:root {
+    --primary-color: #0b132b;
+    --primary-light: #1e293b;
+    --secondary-color: #1c64f2;
+    --secondary-dark: #1d4ed8;
+    --accent-color: #f59e0b;
+    --accent-dark: #d97706;
+    --text-color: #334155;
+    --text-light: #64748b;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+    --border-color: #e2e8f0;
+}
 
-    <header class="hero">
-        <img src="images/logo.jpg" alt="TL NextWave Merchant Services" class="hero-logo">
-        <h1>Smart POS Systems For Restaurants & Nail Salons</h1>
-        <p class="subtitle">We help restaurant and nail salon owners run smoother, faster, and more profitably with modern point-of-sale technology and payment processing built for your industry.</p>
-        <div class="cta-buttons">
-            <a href="contact.html" class="btn btn-primary">Request Demo</a>
-            <a href="tel:19712169309" class="btn btn-secondary"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L7.9 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.7 2z"/></svg>
- Call Now</a>
-        </div>
-        <div class="industries" style="margin-top:30px;">
-            <a href="restaurant-pos.html" class="industry-pill">Restaurant POS</a>
-            <a href="nail-salon-pos.html" class="industry-pill">Nail Salon POS</a>
-            <a href="retail-pos.html" class="industry-pill">Retail POS</a>
-        </div>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 
-    <div class="stat-strip">
-        <div class="stat"><div class="num">24/7</div><div class="label">Customer Support</div></div>
-        <div class="stat"><div class="num">1-2 Days</div><div class="label">Setup Time</div></div>
-        <div class="stat"><div class="num">$0</div><div class="label">Hidden Fees</div></div>
-    </div>
+html {
+    scroll-behavior: smooth;
+}
 
-    <section class="section">
-        <div class="section-inner">
-            <h2 class="section-title reveal">Our Services</h2>
-            <p class="section-subtitle reveal">Everything your business needs to take payments and run day-to-day operations.</p>
-            <div class="grid">
-                <div class="card reveal">
-    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="12" rx="2"/><path d="M8 21h8M12 15v6"/><path d="M7 7h10M7 10h6"/></svg>
+body {
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
-    <h3>Modern POS System</h3>
-    <p>Fast, reliable point-of-sale hardware and software for smooth transactions every time.</p>
-    
-</div>
-                <div class="card reveal">
-    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></svg>
+a {
+    color: inherit;
+}
 
-    <h3>Payment Processing</h3>
-    <p>Secure, high-speed credit card processing with competitive rates for every industry.</p>
-    
-</div>
-                <div class="card reveal">
-    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="5"/><circle cx="16" cy="16" r="5"/><path d="M8 8L16 16"/></svg>
+img {
+    max-width: 100%;
+    display: block;
+}
 
-    <h3>Cash Discount Program</h3>
-    <p>Reduce or eliminate processing fees legally, with transparent pricing for your customers.</p>
-    
-</div>
-                <div class="card reveal">
-    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2l2.4 12.2a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    <h3>Online Ordering & Booking</h3>
-    <p>Take orders online for restaurants, or bookings online for salons — all in one system.</p>
-    
-</div>
-                <div class="card reveal">
-    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.6l-5.9 3 1.2-6.6L2.5 9.4l6.6-.9z"/></svg>
+/* ===== Navigation ===== */
+nav {
+    background-color: var(--primary-color);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
 
-    <h3>Loyalty Program</h3>
-    <p>Keep customers coming back with custom rewards built right into your POS.</p>
-    
-</div>
-                <div class="card reveal">
-    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9"/><path d="M9 20v-6h6v6"/></svg>
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
 
-    <h3>Retail POS</h3>
-    <p>Inventory tracking, barcode scanning, and checkout built for retail stores.</p>
-    
-</div>
-            </div>
-            <div style="text-align:center; margin-top:35px;">
-                <a href="services.html" class="btn btn-outline">See All Services</a>
-            </div>
-        </div>
-    </section>
+.nav-logo img {
+    height: 42px;
+    width: auto;
+    border-radius: 4px;
+}
 
-    <section class="section alt">
-        <div class="section-inner">
-            <h2 class="section-title reveal">Built For Your Industry</h2>
-            <p class="section-subtitle reveal">Purpose-fit features for the industries we know best.</p>
-            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-                <a href="restaurant-pos.html" class="card reveal">
-                    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v8a2 2 0 0 0 2 2v10"/><path d="M6 2v6M9 2v6"/><path d="M18 2c-1.7 0-3 2-3 5s1.3 5 3 5v10"/></svg>
+.nav-logo-text {
+    color: var(--white);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
 
-                    <h3>For Restaurants</h3>
-                    <ul class="check-list">
-                        <li>Table & tab management</li>
-                        <li>Online ordering & delivery</li>
-                        <li>Kitchen ticket printing</li>
-                    </ul>
-                    <span class="link-arrow">Learn more &rarr;</span>
-                </a>
-                <a href="nail-salon-pos.html" class="card reveal">
-                    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4-3 7-7 7-11a7 7 0 0 0-14 0c0 4 3 8 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+.nav-logo-text span {
+    color: var(--accent-color);
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
 
-                    <h3>For Nail Salons</h3>
-                    <ul class="check-list">
-                        <li>Appointment booking</li>
-                        <li>Technician commission tracking</li>
-                        <li>Client history & reminders</li>
-                    </ul>
-                    <span class="link-arrow">Learn more &rarr;</span>
-                </a>
-                <a href="retail-pos.html" class="card reveal">
-                    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9"/><path d="M9 20v-6h6v6"/></svg>
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
 
-                    <h3>For Retail</h3>
-                    <ul class="check-list">
-                        <li>Barcode scanning & inventory</li>
-                        <li>Fast checkout</li>
-                        <li>Multi-location support</li>
-                    </ul>
-                    <span class="link-arrow">Learn more &rarr;</span>
-                </a>
-            </div>
-        </div>
-    </section>
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s;
+    position: relative;
+}
 
-    <section class="section alt">
-        <div class="section-inner">
-            <h2 class="section-title reveal">What Business Owners Say</h2>
-            <p class="section-subtitle reveal">Real feedback from restaurants and salons using our POS systems.</p>
-            <div class="grid">
-                <div class="testimonial-card reveal">
-    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5C4.2 6.6 3 9 3 11.6 3 14.5 5 17 8 17c2.2 0 4-1.7 4-4s-1.6-3.8-3.6-3.8c-.3 0-.6 0-.8.1C8 7.6 9.3 6 11.5 5L10 3C9 3.5 8 4.1 7 5zm10 0c-2.8 1.6-4 4-4 6.6 0 2.9 2 5.4 5 5.4 2.2 0 4-1.7 4-4s-1.6-3.8-3.6-3.8c-.3 0-.6 0-.8.1C18 7.6 19.3 6 21.5 5L20 3c-1 .5-2 1.1-3 2z"/></svg>
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--white);
+}
 
-    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-    <p class="quote-text">&ldquo;Booking used to eat up my whole morning. Now clients book themselves and reminders go out automatically. No-shows dropped noticeably.&rdquo;</p>
-    <div class="testimonial-author">
-        <div class="testimonial-avatar">MP</div>
-        <div>
-            <div class="name">Maria P.</div>
-            <div class="role">Nail Salon Owner</div>
-        </div>
-    </div>
-</div><div class="testimonial-card reveal">
-    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5C4.2 6.6 3 9 3 11.6 3 14.5 5 17 8 17c2.2 0 4-1.7 4-4s-1.6-3.8-3.6-3.8c-.3 0-.6 0-.8.1C8 7.6 9.3 6 11.5 5L10 3C9 3.5 8 4.1 7 5zm10 0c-2.8 1.6-4 4-4 6.6 0 2.9 2 5.4 5 5.4 2.2 0 4-1.7 4-4s-1.6-3.8-3.6-3.8c-.3 0-.6 0-.8.1C18 7.6 19.3 6 21.5 5L20 3c-1 .5-2 1.1-3 2z"/></svg>
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: var(--accent-color);
+}
 
-    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-    <p class="quote-text">&ldquo;Orders move faster and the kitchen gets tickets instantly. Setup only took two days and support has been easy to reach.&rdquo;</p>
-    <div class="testimonial-author">
-        <div class="testimonial-avatar">DT</div>
-        <div>
-            <div class="name">David T.</div>
-            <div class="role">Restaurant Owner</div>
-        </div>
-    </div>
-</div><div class="testimonial-card reveal">
-    <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5C4.2 6.6 3 9 3 11.6 3 14.5 5 17 8 17c2.2 0 4-1.7 4-4s-1.6-3.8-3.6-3.8c-.3 0-.6 0-.8.1C8 7.6 9.3 6 11.5 5L10 3C9 3.5 8 4.1 7 5zm10 0c-2.8 1.6-4 4-4 6.6 0 2.9 2 5.4 5 5.4 2.2 0 4-1.7 4-4s-1.6-3.8-3.6-3.8c-.3 0-.6 0-.8.1C18 7.6 19.3 6 21.5 5L20 3c-1 .5-2 1.1-3 2z"/></svg>
+/* Dropdown */
+.has-dropdown {
+    position: relative;
+}
 
-    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-    <p class="quote-text">&ldquo;Switching was simple and the pricing is exactly what was explained upfront — no surprise fees on my statement.&rdquo;</p>
-    <div class="testimonial-author">
-        <div class="testimonial-avatar">SL</div>
-        <div>
-            <div class="name">Sara L.</div>
-            <div class="role">Retail Store Manager</div>
-        </div>
-    </div>
-</div>
-            </div>
-        </div>
-    </section>
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
 
-    <section class="contact-section" id="contact">
-        <div class="contact-box reveal">
-            <h2>Get Your Free Consultation</h2>
-            <p>Let's talk about how a modern POS system can save you time and money.</p>
-            <div class="contact-details">
-                <a href="tel:19712169309" class="contact-item"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L7.9 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.7 2z"/></svg>
- (971) 216-9309</a>
-                <a href="mailto:letmerchant@gmail.com" class="contact-item"><svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
- letmerchant@gmail.com</a>
-            </div>
-            <div class="cta-buttons">
-                <a href="contact.html" class="btn btn-primary">Request Demo</a>
-                <a href="tel:19712169309" class="btn btn-secondary">Call Now</a>
-            </div>
-        </div>
-    </section>
+.dropdown-toggle .caret {
+    font-size: 0.7rem;
+    transition: transform 0.2s;
+}
 
+.has-dropdown.open .dropdown-toggle .caret {
+    transform: rotate(180deg);
+}
 
-    <a href="tel:19712169309" class="floating-call" aria-label="Call TL NextWave now">
-        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L7.9 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.7 2z"/></svg>
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 0;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    min-width: 220px;
+    padding: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
 
-    </a>
+.has-dropdown.open .dropdown-menu,
+.has-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
 
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>TL NextWave Merchant Services</h4>
-                <p>Modern POS systems and payment processing built for restaurants, nail salons, and retail stores. Fast setup, transparent pricing, real support.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="restaurant-pos.html">Restaurant POS</a></li>
-                    <li><a href="nail-salon-pos.html">Nail Salon POS</a></li>
-                    <li><a href="retail-pos.html">Retail POS</a></li>
-                    <li><a href="online-ordering.html">Online Ordering</a></li>
-                    <li><a href="loyalty.html">Loyalty Program</a></li>
-                    <li><a href="cash-discount.html">Cash Discount</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="tel:19712169309">(971) 216-9309</a></li>
-                    <li><a href="mailto:letmerchant@gmail.com">letmerchant@gmail.com</a></li>
-                    <li>Portland, OR</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 TL NextWave Merchant Services. All rights reserved.</p>
-            <div class="footer-legal">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-            </div>
-        </div>
-    </footer>
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: var(--primary-color) !important;
+    font-size: 0.9rem;
+    font-weight: 500 !important;
+}
 
-    <script src="js/main.js"></script>
-</body>
-</html>
+.dropdown-menu li a:hover {
+    background: var(--bg-light);
+    color: var(--secondary-color) !important;
+}
+
+@media (max-width: 900px) {
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: max-height 0.3s ease;
+        background: rgba(255,255,255,0.03);
+    }
+
+    .has-dropdown.open .dropdown-menu {
+        max-height: 400px;
+        padding: 6px 0 6px 14px;
+    }
+
+    .dropdown-menu li a {
+        color: #cbd5e1 !important;
+    }
+
+    .dropdown-menu li a:hover {
+        background: rgba(255,255,255,0.06);
+        color: var(--white) !important;
+    }
+}
+
+.nav-btn {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: var(--white);
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    white-space: nowrap;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(245, 158, 11, 0.4);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.nav-toggle span {
+    width: 26px;
+    height: 2px;
+    background: var(--white);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* ===== Page Header (sub-pages) ===== */
+.page-header {
+    background: radial-gradient(circle at top, #1e293b 0%, #0b132b 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.page-header .eyebrow {
+    color: var(--accent-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.page-header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.page-header p {
+    color: #94a3b8;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+.breadcrumb {
+    margin-top: 18px;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.breadcrumb a {
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-color);
+}
+
+/* ===== Hero (home) ===== */
+.hero {
+    background: radial-gradient(circle at top, #1e293b 0%, #0b132b 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 60px 20px 80px;
+}
+
+.hero-logo {
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p.subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.industries {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.industry-pill {
+    background: rgba(28, 100, 242, 0.15);
+    border: 1px solid rgba(28, 100, 242, 0.35);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.industry-pill:hover {
+    background: rgba(28, 100, 242, 0.28);
+    transform: translateY(-2px);
+}
+
+/* ===== Sections ===== */
+.section {
+    padding: 70px 20px;
+}
+
+.section.alt {
+    background: var(--white);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 40px;
+    font-size: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Cards / Grids ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid var(--secondary-color);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.card .icon {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.card .link-arrow {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* Feature list with checkmarks */
+.check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.check-list li {
+    padding: 9px 0;
+    color: #475569;
+    padding-left: 28px;
+    position: relative;
+}
+
+.check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* Two-column layout */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .two-col { grid-template-columns: 1fr; }
+}
+
+.stat-strip {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background: var(--primary-color);
+}
+
+.stat {
+    text-align: center;
+    color: var(--white);
+}
+
+.stat .num {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.stat .label {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 4px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.3);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-outline:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* ===== Contact Section (shared) ===== */
+.contact-section {
+    background-color: var(--primary-color);
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contact-box h2 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.contact-item {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+}
+
+.contact-item:hover {
+    color: var(--accent-color);
+}
+
+/* ===== Contact Form ===== */
+.form-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(28, 100, 242, 0.15);
+}
+
+.form-error {
+    color: #dc2626;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-status {
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.form-status.success {
+    background: #dcfce7;
+    color: #166534;
+    display: block;
+}
+
+/* ===== FAQ Accordion ===== */
+.faq-item {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 20px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq-question .icon {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    transition: transform 0.3s;
+    flex-shrink: 0;
+}
+
+.faq-item.open .faq-question .icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 24px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 300px;
+    padding: 0 24px 20px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--primary-color);
+    color: #94a3b8;
+    padding: 45px 20px 20px;
+}
+
+.footer-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-col h4 {
+    color: var(--white);
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .footer-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== Scroll Reveal Animation ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ===== Responsive Nav ===== */
+@media (max-width: 900px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 73px;
+        left: 0;
+        right: 0;
+        background: var(--primary-color);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 5%;
+        gap: 0;
+        transform: translateY(-150%);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-links.open {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 14px 0;
+    }
+
+    .nav-links .nav-btn {
+        margin: 14px 0;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1, .page-header h1 { font-size: 2rem; }
+    .hero p.subtitle { font-size: 1rem; }
+    .hero-logo { max-width: 180px; }
+    .section-title { font-size: 1.6rem; }
+}
+
+/* ===== SVG Icons ===== */
+.icon-svg {
+    width: 34px;
+    height: 34px;
+    color: var(--secondary-color);
+    margin-bottom: 14px;
+}
+
+.icon-svg.accent { color: var(--accent-color); }
+
+.icon-circle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(28, 100, 242, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.icon-circle .icon-svg {
+    margin-bottom: 0;
+    width: 26px;
+    height: 26px;
+}
+
+/* ===== Testimonials ===== */
+.testimonial-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+.testimonial-card .icon-svg {
+    color: var(--accent-color);
+    width: 28px;
+    height: 28px;
+    margin-bottom: 14px;
+}
+
+.testimonial-card p.quote-text {
+    color: var(--text-color);
+    font-size: 0.98rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.testimonial-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.testimonial-author .name {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+}
+
+.testimonial-author .role {
+    color: var(--text-light);
+    font-size: 0.82rem;
+}
+
+.stars {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+/* ===== Photo Showcase ===== */
+.photo-showcase {
+    padding: 0 20px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.photo-showcase-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.photo-showcase-inner img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .photo-showcase-inner img {
+        max-height: 280px;
+    }
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(11,19,43,0.85), transparent);
+    color: var(--white);
+    padding: 30px 24px 16px;
+    font-size: 0.9rem;
+}
+
+.photo-caption strong {
+    color: var(--accent-color);
+}
+
+/* ===== Google Map ===== */
+.map-wrap {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+    line-height: 0;
+}
+
+.map-wrap iframe {
+    width: 100%;
+    height: 340px;
+    border: 0;
+    display: block;
+}
+
+/* ===== Floating Call Now Button ===== */
+.floating-call {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: var(--white);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+    z-index: 900;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.floating-call:hover {
+    transform: scale(1.08);
+}
+
+.floating-call .icon-svg {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .floating-call { bottom: 16px; right: 16px; width: 52px; height: 52px; }
+}
+
+/* ===== Legal pages ===== */
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.legal-content h2 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin: 32px 0 12px;
+}
+
+.legal-content h2:first-child {
+    margin-top: 0;
+}
+
+.legal-content p, .legal-content li {
+    color: var(--text-light);
+    margin-bottom: 12px;
+    font-size: 0.97rem;
+}
+
+.legal-content ul {
+    padding-left: 22px;
+}
+
+.legal-updated {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Footer legal row */
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.footer-legal a {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.footer-legal a:hover {
+    color: var(--accent-color);
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+}
