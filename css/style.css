@@ -1,4 +1,4 @@
- /* ===========================
+/* ===========================
    TL NextWave Merchant Services
    Shared Stylesheet
 =========================== */
@@ -210,7 +210,7 @@ nav {
 }
 
 .nav-btn {
-    background: linear-gradient(135deg, #1c64f2, #2563eb);
+    background: linear-gradient(135deg, #f59e0b, #d97706);
     color: var(--white);
     padding: 10px 22px;
     border-radius: 6px;
@@ -218,13 +218,13 @@ nav {
     font-weight: 600;
     font-size: 0.9rem;
     transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
     white-space: nowrap;
 }
 
 .nav-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 6px 16px rgba(245, 158, 11, 0.4);
 }
 
 .nav-toggle {
@@ -1076,4 +1076,4 @@ input:focus-visible,
 textarea:focus-visible {
     outline: 3px solid var(--accent-color);
     outline-offset: 2px;
-} 
+}
